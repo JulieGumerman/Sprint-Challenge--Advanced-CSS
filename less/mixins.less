@@ -1,1 +1,28 @@
 // Mixins Here
+
+.flex-styles(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.pad-height(@top, @bottom) {
+    padding-top: @top;
+    padding-bottom: @bottom;
+}
+
+.button(@color, @background){
+    color: @color;
+    background: @background;
+    padding: 10px;
+    .flex-styles(center,center);
+    font-size: 1.4px;
+    border-radius: 10px;
+
+    &:hover{
+        color: @background;
+        background: @color;
+        border: 1px @shuttle-gray solid;
+    }
+
+}
