@@ -369,6 +369,11 @@ p {
   width: 100%;
   border: 1px #22283A solid;
 }
+@media (max-width: 900px) {
+  .form-wrap form {
+    width: 80%;
+  }
+}
 @media (max-width: 800px) {
   .form-wrap form {
     width: 100%;
@@ -391,7 +396,7 @@ p {
   align-items: center;
   font-size: 1.4px;
   border-radius: 10px;
-  width: 40%;
+  width: 20%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -399,4 +404,9 @@ p {
   color: #22283A;
   background: white;
   border: 1px #5E6164 solid;
+}
+@media (max-width: 500px) {
+  .form-wrap .btn-submit {
+    width: 80%;
+  }
 }

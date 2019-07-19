@@ -29,6 +29,10 @@ p {
             width: 100%;
             border: 1px @btn-bg-color solid;
         }
+
+        @media (max-width: 900px){
+            width: 80%;
+        }
         @media @tablet {
             width: 100%;
 
@@ -48,9 +52,13 @@ p {
 
         .btn-submit {
                 .button(white, @btn-bg-color);
-                width: 40%;
+                width: 20%;
                 margin-top: 15px;
                 margin-bottom: 15px;
+
+                @media @mobile {
+                    width: 80%;
+                }
         
         }//submit button
 
