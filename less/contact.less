@@ -1,0 +1,60 @@
+h2 {
+    .pad-height(20px, 20px);
+}
+p {
+    .pad-height(0px, 20px);
+}
+.form-wrap {
+    width: 60%; 
+    margin: 0 auto;
+    .flex-styles(center, center);
+    flex-direction: column;
+
+    @media @tablet {
+        width: 90%;
+    }
+
+    form {
+        width: 60%;
+
+        input {
+            height: 40px;
+            width: 100%;
+            border: 1px @btn-bg-color solid;
+            margin-bottom: 15px;
+        }//input
+
+        textarea {
+            height: 300px;
+            width: 100%;
+            border: 1px @btn-bg-color solid;
+        }
+        @media @tablet {
+            width: 100%;
+
+
+            textarea {
+                height: 200px;
+            }
+        }
+
+        @media @mobile {
+            textarea{
+            height: 150px;
+            }
+        }
+    }//form
+
+
+        .btn-submit {
+                .button(white, @btn-bg-color);
+                width: 40%;
+                margin-top: 15px;
+                margin-bottom: 15px;
+        
+        }//submit button
+
+
+
+}//form wrap
+

@@ -151,6 +151,9 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h6 {
+  font-size: 1.6rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -296,9 +299,6 @@ footer {
   background: white;
   border: 1px #5E6164 solid;
 }
-.home .walk .walk-text .btn h6 {
-  font-size: 1.6rem;
-}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -333,4 +333,70 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+p {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.form-wrap {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .form-wrap {
+    width: 90%;
+  }
+}
+.form-wrap form {
+  width: 60%;
+}
+.form-wrap form input {
+  height: 40px;
+  width: 100%;
+  border: 1px #22283A solid;
+  margin-bottom: 15px;
+}
+.form-wrap form textarea {
+  height: 300px;
+  width: 100%;
+  border: 1px #22283A solid;
+}
+@media (max-width: 800px) {
+  .form-wrap form {
+    width: 100%;
+  }
+  .form-wrap form textarea {
+    height: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .form-wrap form textarea {
+    height: 150px;
+  }
+}
+.form-wrap .btn-submit {
+  color: white;
+  background: #22283A;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4px;
+  border-radius: 10px;
+  width: 40%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.form-wrap .btn-submit:hover {
+  color: #22283A;
+  background: white;
+  border: 1px #5E6164 solid;
 }
