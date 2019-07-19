@@ -1,1 +1,43 @@
 // Navigation code here
+.nav-bar {
+    background: @nav-bg;
+    .flex-styles(center, center);
+
+    .container  {
+        color: @nav-font;
+        .flex-styles(center, center);
+        flex-direction: column;
+
+        h1 {
+            font-size: 4rem;
+            .pad-height(10px, 10px);
+        }/*h1*/
+
+
+    }/*container*/
+
+} /*.nav-bar*/
+
+nav {
+    width: 50%;
+    .flex-styles(space-around, center);
+    padding-bottom: 10px;
+
+    a{
+        color: @nav-font;
+        text-decoration: none;
+        font-size: 1.6rem;
+        .pad-height(10px, 10px);
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:hover{
+            border-radius: 5px;
+            background: @nav-font;
+            color: @nav-bg;
+        }
+
+    }
+
+    
+}
