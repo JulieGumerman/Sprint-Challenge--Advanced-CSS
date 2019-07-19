@@ -20,7 +20,7 @@
 
 nav {
     width: 50%;
-    .flex-styles(space-around, center);
+    .flex-styles(space-between, center);
     padding-bottom: 10px;
 
     a{
@@ -37,6 +37,10 @@ nav {
             color: @nav-bg;
         }
 
+    }
+
+    @media @tablet {
+        width: 100%;
     }
 
     
